@@ -96,11 +96,13 @@ var handlers = {
     if (cityMarch !== "") {
       if (cityOrganiser.length === 1) {
         this.emit(":ask", `The organiser for ${city} Alexa Developer Meetup is ${cityOrganiser[0]}`, "How can I help!")
-      } else if (cityOrganiser.length > 1) {
-        this.emit(":ask", `The organisers for ${city} Alexa Developer Meetup are ${cityOrganiser.convertArrayToSentence}`, "How can I help!")
+        // multiper organisers
       } else {
-        this.emit(":ask", `Sorry Looks like city doesn't have an Alexa Development Meetup`, "How can I help!")
+        this.emit(":ask", `The organisers for ${city} Alexa Developer Meetup are ${convertArrayToSentence(cityOrganiser)}`, "How can I help!")
       }
+    }
+    else {
+      this.emit(":ask", `Sorry looks like we don't have an Alexa meet up for ${city}`, "How can I help!")
     }
   }
   
