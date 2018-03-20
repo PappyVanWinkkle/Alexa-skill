@@ -1,7 +1,5 @@
-Hello hello 
-Hello hi 
-Hello hey 
-Hello yo 
+NameCapture my name is {USFirstName}
+NameCapture my name is {UKFirstName}
 
 AlexaMeetUpNumbers how many cities have alexa meetups?
 AlexaMeetUpNumbers how many alexa meetups are there?
@@ -14,6 +12,9 @@ AlexaMeetUpCityChecker does {EuropeanCity} have an alexa meetup
 
 AlexaMeetUpCityChecker check {USCity}
 AlexaMeetUpCityChecker check {EuropeanCity}
+
+CountryCapture I am from {Country}
+CountryCapture I'm from {Country}
 
 AlexaMeetUpOrganiserChecker who is the organiser for {USCity} alexa meetup
 AlexaMeetUpOrganiserChecker who is the organiser for {EuropeanCity} alexa meetup
